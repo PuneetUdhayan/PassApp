@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/settingsInformation"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/settingsPassLogo"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/passlogo"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/settingsProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profilepicture"
+            android:layout_below="@+id/settingsPassLogo"/>
+
+        <TextView
+            android:id="@+id/settingEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test@gmail.com"
+            android:textSize="20dp"
+            android:layout_below="@+id/settingsPassLogo"
+            android:layout_toRightOf="@+id/settingsProfilePicture"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/settingsInformation">
+
+        <Button
+            android:id="@+id/settingsLogOut"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:onClick="settingsSignOut"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/homebutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="settingsToHome"
+            android:src="@drawable/homeicon" />
+
+        <ImageView
+            android:id="@+id/calendarbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="settingsToCalender"
+            android:src="@drawable/calendaricon" />
+
+        <ImageView
+            android:id="@+id/tablebutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="settingsToTable"
+            android:src="@drawable/tableicon" />
+
+        <ImageView
+            android:id="@+id/settingsbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/settingsiconon" />
+
+    </LinearLayout>
+
+</RelativeLayout>

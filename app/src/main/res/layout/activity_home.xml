@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/topRel"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/passlogo"/>
+
+        <TextView
+            android:id="@+id/sarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeLogo"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+    android:id="@+id/toolBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/homebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/homeiconon" />
+
+    <ImageView
+        android:id="@+id/calendarbutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="homeToCalender"
+        android:src="@drawable/calendaricon" />
+
+    <ImageView
+        android:id="@+id/tablebutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="homeToTable"
+        android:src="@drawable/tableicon" />
+
+    <ImageView
+        android:id="@+id/settingsbutton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="homeToSettings"
+        android:src="@drawable/settingicon" />
+
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/toolBar"
+        android:layout_below="@id/topRel">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/homeDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done for today!"
+        android:textSize="35dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <ProgressBar
+        android:id="@+id/waitforlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"/>
+
+</RelativeLayout>

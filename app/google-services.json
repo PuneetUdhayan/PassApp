@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "307785487594",
+    "firebase_url": "https://passdemo1-564d7.firebaseio.com",
+    "project_id": "passdemo1-564d7",
+    "storage_bucket": "passdemo1-564d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307785487594:android:09c1b24afdbbb75e",
+        "android_client_info": {
+          "package_name": "com.example.passdemo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307785487594-90pv5g0qpblr798urj5vk2qdoomggl7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8rvAiROaSFvTlX1uR0b4LmQ5rzozIDEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307785487594-90pv5g0qpblr798urj5vk2qdoomggl7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
